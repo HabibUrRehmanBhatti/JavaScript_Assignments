@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Find Phone!</title>
+    <link rel="shortcut icon" href="images/fav.png" type="image/x-icon">
+</head>
+
+<body>
+    <div id="body">
+        <div id="navBar">
+            <div id="search_bar">
+                <input type="search" name="search bar" id="searchBar" placeholder="Search Mobile By Name...">
+                <select name="" id="dropDown">
+                    <option value="">Select Brand</option>
+                </select>
+                <button id="seach_val" onclick="searchValue()"><i class="fa fa-search" aria-hidden="true"></i>
+                    Search</button>
+            </div>
+        </div>
+        <br>
+        <div id="cardAreHere">
+            <!-- Apple -->
+            <h1 id="heading_cat">Iphone</h1>
+            <br>
+            <div id="catlog">
+                <div id="div_cat">
+                    <center><img src="" class="img_cat" id="img1" alt=""></center>
+                    <h2 id="x"></h2>
+                </div>
+
+                <div id="div_cat">
+                    <center><img src="" class="img_cat" id="img2" alt=""></center>
+                    <h2 id="xr"></h2>
+                </div>
+                <div id="div_cat">
+                    <center><img src="" class="img_cat" id="img3" alt=""></center>
+                    <h2 id="11"></h2>
+                </div>
+                <div id="div_cat">
+                    <center><img src="" class="img_cat" id="img4" alt=""></center>
+                    <h2 id="12pro"></h2>
+                </div>
+                <div id="div_cat">
+                    <center><img src="" class="img_cat" id="img5" alt=""></center>
+                    <h2 id="13pro"></h2>
+                </div>
+            </div>
+            <br>
+            <!-- Infinix -->
+            <hr>
+            <br>
+            <h1 id="heading_cat">Infinix</h1>
+            <br>
+            <div id="catlog">
+                <div id="div_cat">
+                    <center><img src="" class="img_cat" id="img6" alt=""></center>
+                    <h2 id="hot10play"></h2>
+                </div>
+                <div id="div_cat">
+                    <center><img src="" class="img_cat" id="img7" alt=""></center>
+                    <h2 id="hot10s"></h2>
+                </div>
+                <div id="div_cat">
+                    <center><img src="" class="img_cat" id="img8" alt=""></center>
+                    <h2 id="note10"></h2>
+                </div>
+                <div id="div_cat">
+                    <center><img src="" class="img_cat" id="img9" alt=""></center>
+                    <h2 id="note12"></h2>
+                </div>
+            </div>
+            <br>
+            <!-- Samsung -->
+            <hr>
+            <br>
+            <h1 id="heading_cat">Samsung</h1>
+            <br>
+            <div id="catlog">
+                <div id="div_cat">
+                    <center><img src="" class="img_cat" id="img10" alt="" </center>>
+                        <h2 id="a8"></h2>
+                </div>
+                <div id="div_cat">
+                    <center><img src="" class="img_cat" id="img11" alt="" </center>>
+                        <h2 id="core"></h2>
+                </div>
+                <div id="div_cat">
+                    <center><img src="" class="img_cat" id="img12" alt="" </center>>
+                        <h2 id="j5"></h2>
+                </div>
+                <div id="div_cat">
+                    <center><img src="" class="img_cat" id="img13" alt="" </center>>
+                        <h2 id="note8"></h2>
+                </div>
+                <div id="div_cat">
+                    <center><img src="" class="img_cat" id="img14" alt="" </center>>
+                        <h2 id="note9"></h2>
+                </div>
+            </div>
+            <br>
+            <!-- Vivo -->
+            <hr>
+            <br>
+            <h1 id="heading_cat">Vivo</h1>
+            <br>
+            <div id="catlog">
+                <div id="div_cat">
+                    <center><img src="" class="img_cat" id="img15" alt="" </center>>
+                        <h2 id="v23"></h2>
+                </div>
+                <div id="div_cat">
+                    <center><img src="" class="img_cat" id="img16" alt="" </center>>
+                        <h2 id="v23e"></h2>
+                </div>
+                <div id="div_cat">
+                    <center><img src="" class="img_cat" id="img17" alt="" </center>>
+                        <h2 id="x80"></h2>
+                </div>
+                <div id="div_cat">
+                    <center><img src="" class="img_cat" id="img18" alt="" </center>>
+                        <h2 id="y55"></h2>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div id="result">
+            <br>
+            <div>
+                <h1 id="description"></h1>
+            </div>
+            <br>
+            <center> <img id="img"></img> </center>
+            <br>
+            <hr>
+            <br>
+            <table id="tableData" align="center">
+                <tr>
+                    <td id="Hidden">Price :</td>
+                    <td id="price"></td>
+                </tr>
+                <tr>
+                    <td id="Hidden">Color :</td>
+                    <td id="color"></td>
+                </tr>
+                <tr>
+                    <td id="Hidden">Camera :</td>
+                    <td id="camera"></td>
+                </tr>
+                <tr>
+                    <td id="Hidden">Memory :</td>
+                    <td id="memory"></td>
+                </tr>
+            </table>
+            <br>
+            <center>
+                <div><button id="btn_cart" onclick="swal('Added!', 'Added in your Cart', 'success');"><i
+                            class="fa fa-shopping-cart" aria-hidden="true"></i> &nbsp;Add to cart </button></div>
+            </center>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div id="footer">
+        <center>© Mobile Finder App</center>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

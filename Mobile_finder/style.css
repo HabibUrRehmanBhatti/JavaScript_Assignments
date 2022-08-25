@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+#navBar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0px auto;
+  margin-top: 20px;
+  height: max-content;
+  border-bottom: 1px solid black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#searchBar {
+  width: 400px;
+  height: 50px;
+  padding-left: 10px;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+#searchBar::placeholder {
+  padding-left: 0px;
+  font-size: 17px;
+}
+
+#searchBar:focus {
+  outline: none;
+}
+
+#seach_val {
+  height: 48px;
+  width: 120px;
+  font-size: 17px;
+  border-radius: 5px;
+  margin-left: 5px;
+  background: none;
+}
+
+#dropDown {
+  width: 220px;
+  height: 50px;
+  padding-left: 8px;
+  font-size: 17px;
+  border-radius: 5px;
+}
+.box {
+  border: 0.2px solid black;
+  height: max-content;
+  width: max-content;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.box:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#result {
+  border-radius: 6px;
+  width: 350px;
+  height: min-content;
+  padding: 10px;
+  margin: 0px auto;
+  display: none;
+  line-height: 25px;
+  font-weight: 900;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-bottom: 20px;
+}
+
+#description {
+  padding-top: 10px;
+  text-decoration: underline;
+  text-align: center;
+  overflow: hidden;
+}
+
+img {
+  height: auto;
+  width: 180px;
+}
+
+#info {
+  width: max-content;
+}
+
+#btn_cart {
+  width: 250px;
+  border: 1px solid black;
+  height: 50px;
+  font-size: 17px;
+  font-weight: bolder;
+  background: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.info {
+  padding-left: 10px;
+}
+
+#hidden {
+  display: none;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+#tableData {
+  margin: 0px auto;
+}
+
+
+
+/*  CARDS UI */
+
+#catlog {
+  width: 90%;
+  height: max-content;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#div_cat {
+  height: 400px;
+  width: 300px;
+  cursor: pointer;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border: none;
+
+}
+
+h2 {
+  text-align: center;
+}
+
+.img_cat {
+  margin-top: 50px;
+}
+
+#heading_cat {
+  padding-left: 100px;
+  font-size: 40px;
+}
+#footer{
+  position: relative;
+  bottom: 0px;
+  height: max-content;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+}
